@@ -90,5 +90,11 @@ export const fieldTypes: Record<string, Record<string, 'string' | 'number' | 'bo
     id: 'number',
     email: 'string',
     createdAt: 'date'
+  },
+  slide: {
+    id: 'number',
+    name: 'string',
+    imageUrl: 'string',
+    orderNum: 'number'
   }
 };

@@ -11,6 +11,7 @@ import { favoriteRoutes } from './routes/favoriteRoutes';
 import { newsRoutes } from './routes/newsRoutes';
 import { messageRoutes } from './routes/messageRoutes';
 import { newsletterRoutes } from './routes/newsletterRoutes';
+import { slideRoutes } from './routes/slideRoutes';
 
 dotenv.config();
 const port = process.env.SERVERPORT || 3000
@@ -31,6 +32,7 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/news', newsRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/newsletters', newsletterRoutes);
+app.use('/api/slides', slideRoutes);
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

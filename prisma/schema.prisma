@@ -165,10 +165,18 @@ model Message {
 }
 
 model NewsletterSubscriber {
-  id         Int      @id @default(autoincrement())
-  email      String   @unique
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
   createdAt DateTime @default(now())
 
   @@map("newsletterSubscribers")
 }
 
+model Slide {
+  id       Int    @id @default(autoincrement())
+  name     String
+  imageUrl String
+  orderNum Int
+
+  @@map("slides")
+}
